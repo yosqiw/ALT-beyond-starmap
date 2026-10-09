@@ -1040,9 +1040,9 @@ const SHIPS = [
   let dest = null;     // warp destination
   const MODE_INFO = {
     adjacency: { label: "Borders", danger: false },
-    jump: { label: "Jump", range: () => TRAVEL.JUMP_RANGE, about: "CSP, Empire and Federation ships. Short, fast hops." },
-    warp: { label: "Warp", route: true, about: "Conventional drive, the only one the Sisters use." },
-    crs: { label: "CRS", range: () => TRAVEL.CRS_RANGE, about: "The Drift's realm-shift drive. Long range, but dangerous: heavy hull stress.", danger: true },
+    jump: { label: "Jump", range: () => TRAVEL.JUMP_RANGE, about: "Sophisticated faster-than-light drive that creates a 'jumpspace' portal." },
+    warp: { label: "Warp", route: true, about: "Older model of faster-than-light drive that uses 'field effect generators' to manipulate space in a bubble around a ship." },
+    crs: { label: "CRS", range: () => TRAVEL.CRS_RANGE, about: "The Drift's realm-shift drive. Long range, instantaneous travel that subjects ships to significant hull stress.", danger: true },
   };
   const isTravel = m => m !== "adjacency";
   const isRange = m => m === "jump" || m === "crs";   // modes that show everything in range of the start
