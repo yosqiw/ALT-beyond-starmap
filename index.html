@@ -339,11 +339,11 @@ const SYSTEMS = [
   /* ---------- Human Planetary Federation (remnant) — middle of the cluster ---------- */
   { name: "Hestia", faction: "FED", status: "dead", capital: true,
     position: { x: 0.0, y: 0.0, z: 0.0 },       // PLACEHOLDER
-    star: "Nova remnant. The star exploded in 120.982.",
-    note: "The Federation's lost heart. The Cradle, homeworld of stellar humanity, orbited here until the star went nova. The nova's light was seen across the cluster at the same moment, which light should not do. A Drift probe later found vast orbital structures still circling the remnant. Nobody agrees on what happened, and the Federation does not discuss it.",
+    star: "White dwarf and nebula.",
+    note: "The Federation's lost heart. The Cradle, homeworld of stellar humanity, orbited here until the star went nova. Nobody agrees on what happened, and the Federation does not discuss it.",
     planets: [
       { name: "The Cradle", note: "Former homeworld of the Federation, and the world that ran the Reunion. Lost with the star." },
-      { name: "Orbital structures", note: "Vast constructions still in orbit around the remnant. Their purpose is not public." },
+      { name: "Orbital structures", note: "Vast constructions still in close orbit around the remnant dwarf. Their purpose is not public." },
     ],
     adjacent: ["Pomona", "Cardea", "Portunus", "The Drift", "Janus", "Forculus", "Fontus", "Fornax", "Lucina", "Pales", "Consus"] },
 
@@ -352,7 +352,7 @@ const SYSTEMS = [
     star: "Yellow dwarf",
     note: "One of the three systems the Federation still holds, on its border with the Holy Lunar Empire. Current posting of OE Team Orion.",
     planets: [
-      { name: "Pomona II", note: "The Federation's breadbasket: an orchard and grain world that feeds Portunus and Cardea. Farmland runs in a long temperate band; beyond the cultivated edge the native ecology is hostile. The capital is Vertumnus. Empire pilgrims are arriving and settling, and harvest convoys have been lost to raiders." },
+      { name: "Pomona II", note: "The Federation's breadbasket: an orchard and grain world that feeds Portunus and Cardea. Farmland runs in a long temperate band; beyond the cultivated edge the native ecology is hostile." },
     ],
     adjacent: ["Hestia", "Cardea", "Matins", "Vigil", "Silvanus", "Pales", "Consus"] },
 
@@ -379,27 +379,27 @@ const SYSTEMS = [
   { name: "Janus", faction: "FED", status: "dead",
     position: { x: -3.0, y: 1.4, z: -3.8 },     // PLACEHOLDER
     star: "Red dwarf",
-    note: "Former Federation crossroads where the routes to Pomona and the southern frontier met. Silent since 120.982. Nobody holds it now.",
+    note: "Former Federation crossroads where the routes to Pomona and the southern frontier once met.",
     planets: [
-      { name: "Janus I", note: "Waystation world. Its docks and customs halls still stand, empty." },
+      { name: "Janus I", note: "Cracked waystation world." },
     ],
     adjacent: ["Hestia", "Silvanus", "Terminus", "Limentinus", "Annona"] },
 
   { name: "Silvanus", faction: "FED", status: "dead",
     position: { x: -6.6, y: 3.0, z: -2.4 },     // PLACEHOLDER
     star: "Orange dwarf",
-    note: "Former Federation forest colony between Pomona and Empire space. Silent since 120.982. Nobody holds it now. Empire pilgrims cross it on their way to Pomona.",
+    note: "Former Federation forest colony. Cracked apart since 120.982. Nobody holds it now. Empire pilgrims cross it on their way to Pomona.",
     planets: [
-      { name: "Silvanus II", note: "Forest world, once logged and farmed. The settlements are overgrown." },
+      { name: "Silvanus II", note: "Was once a forest world. Currently exists only as a large debris field." },
     ],
     adjacent: ["Pomona", "Janus", "Vigil"] },
 
   { name: "Terminus", faction: "FED", status: "dead",
     position: { x: -4.8, y: -2.4, z: -6.5 },    // PLACEHOLDER
     star: "Red dwarf",
-    note: "For eleven centuries this was where the Federation stopped Empire ships. Silent since 120.982. Nobody holds it now.",
+    note: "For eleven centuries this was where the Federation stopped Empire ships. Silent since 120.982.",
     planets: [
-      { name: "Terminus Station", note: "Containment fortress in high orbit. Dark, but intact." },
+      { name: "Terminus Station", note: "Large system defence fortress in high orbit. Dark, but intact." },
     ],
     adjacent: ["Janus", "Limentinus", "Vigil", "Sext"] },
 
@@ -415,28 +415,30 @@ const SYSTEMS = [
   { name: "Annona", faction: "FED", status: "dead",
     position: { x: 0.9, y: 3.5, z: -6.0 },      // PLACEHOLDER
     star: "Yellow dwarf",
-    note: "Former granary system of the Federation heartland. Silent since 120.982. Nobody holds it now.",
+    note: "Former granary system of the Federation heartland. Silent since 120.982.",
     planets: [
-      { name: "Annona II", note: "Farm world. Its fields have gone wild." },
-      { name: "Annona IV", note: "Smaller farm world and grain port." },
+      { name: "Annona II", note: "Was once a farm world. No transmissions have been recieved from it since." },
+      { name: "Annona IV", note: "Smaller farm world and grain port. Has also fallen silent." },
     ],
     adjacent: ["Janus", "Limentinus", "Forculus", "Fornax", "Spes"] },
 
   { name: "Forculus", faction: "FED", status: "dead",
     position: { x: 0.5, y: -1.3, z: -5.0 },     // PLACEHOLDER
     star: "Red dwarf",
-    note: "Former Federation fleet yard. Wrecks and an unfinished yard are still in orbit, and every power would like to have them. Silent since 120.982. Nobody holds it now.",
+    note: "Former Federation fleet yard. Wrecks and an unfinished yard are still in orbit, and every power would like to have them. Silent since 120.982.",
     planets: [
       { name: "Forculus Yards", note: "Shipyard complex in orbit around a barren world." },
+      { name: "Forculus I", note: "Barren, arid world. Once held several large extraction outposts." },
     ],
     adjacent: ["Hestia", "Annona", "Fontus", "Fornax", "Spes"] },
 
   { name: "Fontus", faction: "FED", status: "dead",
     position: { x: -3.2, y: -3.2, z: -2.3 },    // PLACEHOLDER
     star: "Red dwarf",
-    note: "Former ice-mining system that supplied water to the heartland. Silent since 120.982. Nobody holds it now.",
+    note: "Former ice-mining system that supplied water to the heartland. Silent since 120.982.",
     planets: [
       { name: "Fontus belt", note: "Ice belt with mining stations and refineries, all dark." },
+      { name: "Fontus III", note: "Gas giant that once held multiple gas extraction orbitals. No transmissions have been recieved from them since 120.982." },
     ],
     adjacent: ["Hestia", "Forculus", "Janus"] },
 
@@ -452,7 +454,7 @@ const SYSTEMS = [
   { name: "Fornax", faction: "FED", status: "dead",
     position: { x: 3.9, y: 1.4, z: -2.7 },      // PLACEHOLDER
     star: "Blue-white star",
-    note: "Former industrial system of the heartland: foundries and solar collectors close to a hot star. Silent since 120.982. Nobody holds it now.",
+    note: "Former industrial system of the heartland: foundries and solar collectors close to a hot star. Silent since 120.982.",
     planets: [
       { name: "Fornax I", note: "Scorched foundry world." },
       { name: "Fornax collectors", note: "Ring of solar collectors, now cold." },
@@ -462,16 +464,16 @@ const SYSTEMS = [
   { name: "Lucina", faction: "FED", status: "dead",
     position: { x: 4.3, y: -2.5, z: 0.2 },      // PLACEHOLDER
     star: "Yellow dwarf",
-    note: "Former Federation medical and research colony. Silent since 120.982. Nobody holds it now.",
+    note: "Former Federation medical and research colony. Silent since 120.982.",
     planets: [
-      { name: "Lucina II", note: "Temperate world with hospital and research campuses." },
+      { name: "Lucina II", note: "Temperate world with multiple large cities." },
     ],
     adjacent: ["Hestia", "Fornax", "Deucalion", "The Drift"] },
 
   { name: "Pales", faction: "FED", status: "dead",
     position: { x: -3.1, y: -2.9, z: 2.3 },     // PLACEHOLDER
     star: "Orange dwarf",
-    note: "Former pastoral colony beside Pomona. Many Pomona families had relatives here. Silent since 120.982. Nobody holds it now.",
+    note: "Former pastoral colony. Silent since 120.982.",
     planets: [
       { name: "Pales II", note: "Grassland world of herds and small towns." },
     ],
@@ -480,7 +482,7 @@ const SYSTEMS = [
   { name: "Consus", faction: "FED", status: "dead",
     position: { x: -1.5, y: 2.7, z: 2.5 },      // PLACEHOLDER
     star: "Red dwarf",
-    note: "Former Federation depot system, holding stores for the heartland. Silent since 120.982. Nobody holds it now.",
+    note: "Former Federation depot system, holding stores for the heartland. Silent since 120.982.",
     planets: [
       { name: "Consus depots", note: "Storage stations and sealed vaults in orbit." },
     ],
@@ -490,9 +492,9 @@ const SYSTEMS = [
   { name: "The Drift", faction: "DRIFT", status: "special",
     position: { x: -0.2, y: -1.0, z: 2.6 },      // PLACEHOLDER
     star: "None. A rogue planet that orbits no star.",
-    note: "Home. The Drift appears on no stellar chart, and our neighbours did not find us; we arrived. Its thymic field ends at the Volkov Line, and past it Drift matter comes apart. The Golden Pillar stands at its pole. Its position on this map is approximate.",
+    note: "Home. The Drift appears on no stellar chart, and our neighbours did not find us; we arrived. The Golden Pillar stands at its pole. Its position on this map is approximate.",
     planets: [
-      { name: "The Drift", note: "A world held together by its own thymic field. Spells work only inside it. Every Drift ship carries a Remote Thymic Endpoint that draws energy from here, and every calendar in the cluster can be checked against its 121,000-year record." },
+      { name: "The Drift", note: "A world lit by its own thymic field. Every Drift ship carries a Remote Thymic Endpoint that draws energy from here, and every calendar in the cluster can be checked against its 121,000-year record." },
     ],
     adjacent: ["Hestia", "Cardea", "Portunus", "Lucina", "Consus"] },
 
@@ -551,7 +553,7 @@ const SYSTEMS = [
     note: "Quiet CSP system on the far side of the Society.",
     planets: [
       { name: "Maia", note: "Agricultural world feeding the CSP's outer systems." },
-      { name: "Merope", note: "Failed colony. The settlements were abandoned, but the CSP keeps the claim." },
+      { name: "Merope", note: "Failed colony. The settlements were abandoned, but the CSP holds its claim." },
     ],
     adjacent: ["Oculus", "Helios"] },
 
@@ -626,28 +628,28 @@ const SYSTEMS = [
     star: "Yellow-white star",
     note: "Seat of the immortal Emperor and the Empire's only homeworld, at the far end of its territory.",
     planets: [
-      { name: "Luna", note: "The terraformed moon of Rise, ringed by a dense mass of space stations. Counted with Rise as one homeworld." },
-      { name: "Rise", note: "Industrial world with several space elevators. Counted with Luna as one homeworld." },
+      { name: "Luna", note: "The terraformed moon of Rise, ringed by a dense mass of space stations. Its climate is carefully maintained by complex atmospheric geoengineering. Counted with Rise as one homeworld." },
+      { name: "Rise", note: "Densely populated industrial world with several space elevators. Counted with Luna as one homeworld." },
     ],
     adjacent: ["Vespers", "Compline"] },
 
   { name: "Vigil", faction: "EMP", status: "settled",
     position: { x: -8.3, y: -1.0, z: -3.3 },    // PLACEHOLDER
     star: "Orange dwarf",
-    note: "Faces Federation space. For eleven centuries this was the Empire's side of the Federation's containment line.",
+    note: "Faces Federation space. The core of its coreward defensive cordon.",
     planets: [
-      { name: "Wolf", note: "Frontier world; garrisons and shrines." },
-      { name: "Hunter’s", note: "The old containment front, facing the Federation. Pilgrims bound for Pomona leave from here." },
+      { name: "Wolf", note: "Twin-planet to Hunter's. Temperate frontier world hosting a large garrison and frontier shrine." },
+      { name: "Hunter’s", note: "Twin-planet to Wolf. Temperate frontier world with several large cities and orbital infrastructure. Home to a large system-defence battery." },
     ],
     adjacent: ["Pomona", "Silvanus", "Terminus", "Sext", "Terce", "Vespers"] },
 
   { name: "Matins", faction: "EMP", status: "settled",
     position: { x: -9.4, y: 1.1, z: 3.7 },      // PLACEHOLDER
     star: "Red dwarf",
-    note: "Empire frontier system facing Pomona.",
+    note: "Empire frontier system. Part of its coreward defensive cordon.",
     planets: [
-      { name: "Snow", note: "Frozen world, mined under the ice." },
-      { name: "Cold", note: "Airless outer world with extraction outposts." },
+      { name: "Snow", note: "Frozen Ice world, largely uninhabited save for some ice mining outposts." },
+      { name: "Cold", note: "Airless dwarf planet, uninhabited." },
     ],
     adjacent: ["Compline", "Lauds", "Pomona"] },
 
@@ -657,7 +659,7 @@ const SYSTEMS = [
     note: "Empire frontier system on the north edge of its territory.",
     planets: [
       { name: "Flower", note: "Temperate frontier world known for its temple gardens." },
-      { name: "Strawberry", note: "Red desert world; a city and a scatter of mines." },
+      { name: "Strawberry", note: "Red desert world with a small mining city and some mining outposts." },
     ],
     adjacent: ["Matins", "Compline"] },
 
@@ -670,12 +672,12 @@ const SYSTEMS = [
     ],
     adjacent: ["Vigil", "Sext", "Vespers"] },
 
-  { name: "Sext", faction: "EMP", status: "settled",
+  { name: "Sixt", faction: "EMP", status: "settled",
     position: { x: -7.4, y: 1.7, z: -7.6 },     // PLACEHOLDER
     star: "White star",
-    note: "Empire system facing the ceasefire line with the CSP.",
+    note: "Empire frontier system. Part of the empire's defensive cordon.",
     planets: [
-      { name: "Sturgeon", note: "Water world with fisheries and a fleet anchorage." },
+      { name: "Sturgeon", note: "Water world with fisheries and a fleet anchorage orbital platform. Hosts a system-defence battery." },
     ],
     adjacent: ["Vigil", "Terce", "Terminus", "Limentinus"] },
 
@@ -684,7 +686,7 @@ const SYSTEMS = [
     star: "Orange dwarf",
     note: "Empire frontier system on the route to Apex.",
     planets: [
-      { name: "Harvest", note: "Farm world supplying the Empire's transit fleets." },
+      { name: "Harvest", note: "Small, temperate farm world supplying the Empire's transit fleets." },
       { name: "Worm", note: "Barren world tunnelled for metals." },
     ],
     adjacent: ["Terce", "Vigil", "Apex"] },
@@ -694,7 +696,7 @@ const SYSTEMS = [
     star: "Red dwarf",
     note: "Empire frontier system near Apex.",
     planets: [
-      { name: "Blue", note: "Ice-blue world at the edge of the habitable zone." },
+      { name: "Blue", note: "Ice-blue world at the edge of the habitable zone. Home to significant water ice mining." },
     ],
     adjacent: ["Apex", "Matins", "Lauds"] },
 
